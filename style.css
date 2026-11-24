@@ -377,14 +377,22 @@ main {
         font-size: 14px;
     }
 
+    #nav0 {
+        overflow-x: auto;
+    }
+
     .flex {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        text-align: center;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        width: max-content;
+        min-width: 100%;
     }
 
     .home {
-        padding: 10px 5px;
+        flex: 0 0 auto;
+        white-space: nowrap;
+        padding: 10px 9px;
         font-size: 12px;
     }
 
